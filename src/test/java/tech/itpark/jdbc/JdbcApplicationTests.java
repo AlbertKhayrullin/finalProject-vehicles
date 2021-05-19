@@ -22,9 +22,9 @@ class JdbcApplicationTests {
                         .json("{\n" +
                         "  \"id\": 1,\n" +
                         "  \"model\": \"BMW\",\n" +
-                        "  \"yearOfIssue\": 2010,\n" +
+                        "  \"vin\": \"KMSKJ84NVOF540289\",\n" +
                         "  \"regNumber\": \"b005mw_116\",\n" +
-                        "  \"ownerId\": 1\n" +
+                        "  \"ownerId\": 2\n" +
                         "}"))
         ;
         mockMvc.perform(get("/protocols/b005mw_116?paid=false")
@@ -35,11 +35,11 @@ class JdbcApplicationTests {
                                 "  {\n" +
                                 "    \"id\": 6,\n" +
                                 "    \"model\": \"BMW\",\n" +
-                                "    \"yearOfIssue\": 2010,\n" +
+                                "    \"vin\": \"KMSKJ84NVOF540289\",\n" +
                                 "    \"regNumber\": \"b005mw_116\",\n" +
-                                "    \"name\": \"Ivanov\",\n" +
-                                "    \"yearOfBirth\": 1990,\n" +
-                                "    \"drivingLicence\": \"1601984257\",\n" +
+                                "    \"name\": \"Petrov\",\n" +
+                                "    \"dateOfBirth\": \"01.02.1980\",\n" +
+                                "    \"drivingLicence\": \"1601787328\",\n" +
                                 "    \"article\": \"12.9.2\",\n" +
                                 "    \"amountFine\": 500,\n" +
                                 "    \"urlPhoto\": \"/media/f52b0c75-57c1-4f35-ad6d-6fa518d69bc7.jpeg\",\n" +
@@ -48,11 +48,11 @@ class JdbcApplicationTests {
                                 "  {\n" +
                                 "    \"id\": 9,\n" +
                                 "    \"model\": \"BMW\",\n" +
-                                "    \"yearOfIssue\": 2010,\n" +
+                                "    \"vin\": \"KMSKJ84NVOF540289\",\n" +
                                 "    \"regNumber\": \"b005mw_116\",\n" +
-                                "    \"name\": \"Ivanov\",\n" +
-                                "    \"yearOfBirth\": 1990,\n" +
-                                "    \"drivingLicence\": \"1601984257\",\n" +
+                                "    \"name\": \"Petrov\",\n" +
+                                "    \"dateOfBirth\": \"01.02.1980\",\n" +
+                                "    \"drivingLicence\": \"1601787328\",\n" +
                                 "    \"article\": \"12.9.4\",\n" +
                                 "    \"amountFine\": 2500,\n" +
                                 "    \"urlPhoto\": \"/media/f52b0c75-57c1-4f35-ad6d-6fa518d69bc7.jpeg\",\n" +
