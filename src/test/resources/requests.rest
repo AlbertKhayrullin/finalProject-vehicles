@@ -1,0 +1,107 @@
+###
+
+GET localhost:8080/autos
+
+###
+
+GET localhost:8080/autos/1
+
+###
+
+POST localhost:8080/autos
+Content-Type: application/json
+
+{
+  "id": 0,
+  "model": "Mitsubishi",
+  "vin": "IHSHK49LFDS309460",
+  "regNumber": "m001it_116",
+  "ownerId": 2
+}
+
+###
+
+POST localhost:8080/autos
+Content-Type: application/json
+
+{
+  "id": 3,
+  "model": "Mazda",
+  "vin": "AJHUE48QLID049838",
+  "regNumber": "m002az_716",
+  "ownerId": 5
+}
+
+###
+
+DELETE localhost:8080/autos/7
+
+###
+
+GET localhost:8080/offenses
+
+###
+
+POST http://localhost:8080/media
+Content-Type: multipart/form-data; boundary=WebAppBoundary
+
+--WebAppBoundary
+Content-Disposition: form-data; name="file"; filename="mitsubishi.jpg"
+Content-Type: image/jpeg
+
+< ./mitsubishi.jpg
+--WebAppBoundary--
+
+###
+
+POST localhost:8080/offenses
+Content-Type: application/json
+
+{
+  "id": 0,
+  "regNumber": "m001it_116",
+  "article": "12.9.3",
+  "amountFine": 1500,
+  "urlPhoto": "",
+  "paid": 0
+}
+
+###
+
+GET localhost:8080/offenses/2
+
+###
+
+POST localhost:8080/offenses
+Content-Type: application/json
+
+{
+  "id": 7,
+  "regNumber": "e007ee_716",
+  "article": "12.9.4",
+  "amountFine": 2500,
+  "urlPhoto": "/media/3dc5108d-602c-4493-a397-1776bf2aa353.jpeg",
+  "paid": 1
+}
+
+###
+
+GET localhost:8080/protocols
+
+###
+
+GET localhost:8080/protocols/b005mw_116?paid=false
+
+###
+
+GET localhost:8080/protocols/regNumberSumNoPaid?regNumber=b005mw_116
+
+###
+
+GET localhost:8080/protocols/Petrov
+
+###
+
+GET localhost:8080/protocols/nameSumNoPaid?name=Petrov
+
+###
