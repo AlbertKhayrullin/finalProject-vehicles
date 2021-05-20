@@ -5,7 +5,6 @@ import org.springframework.web.bind.annotation.*;
 import tech.itpark.jdbc.domain.Protocol;
 import tech.itpark.jdbc.manager.ProtocolManager;
 
-import java.sql.SQLException;
 import java.util.List;
 
 @RequiredArgsConstructor
@@ -16,8 +15,7 @@ public class ProtocolController {
     public final ProtocolManager manager;
 
     @GetMapping()
-    public List<Protocol> getAll() throws SQLException {
-        return manager.getAll();
+    public List<Protocol> getAll() {return manager.getAll();
     }
 
     @GetMapping(path = "/{regNumber}", params = "paid")

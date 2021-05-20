@@ -1,14 +1,14 @@
 ###
 
-GET localhost:8080/autos
+GET https://project-vehicles.herokuapp.com/autos
 
 ###
 
-GET localhost:8080/autos/1
+GET https://project-vehicles.herokuapp.com/autos/1
 
 ###
 
-POST localhost:8080/autos
+POST https://project-vehicles.herokuapp.com/autos
 Content-Type: application/json
 
 {
@@ -21,7 +21,7 @@ Content-Type: application/json
 
 ###
 
-POST localhost:8080/autos
+POST https://project-vehicles.herokuapp.com/autos
 Content-Type: application/json
 
 {
@@ -34,15 +34,15 @@ Content-Type: application/json
 
 ###
 
-DELETE localhost:8080/autos/7
+DELETE https://project-vehicles.herokuapp.com/autos/7
 
 ###
 
-GET localhost:8080/offenses
+GET https://project-vehicles.herokuapp.com/offenses
 
 ###
 
-POST http://localhost:8080/media
+POST https://project-vehicles.herokuapp.com/media
 Content-Type: multipart/form-data; boundary=WebAppBoundary
 
 --WebAppBoundary
@@ -54,7 +54,7 @@ Content-Type: image/jpeg
 
 ###
 
-POST localhost:8080/offenses
+POST https://project-vehicles.herokuapp.com/offenses
 Content-Type: application/json
 
 {
@@ -68,11 +68,11 @@ Content-Type: application/json
 
 ###
 
-GET localhost:8080/offenses/2
+GET https://project-vehicles.herokuapp.com/offenses/2
 
 ###
 
-POST localhost:8080/offenses
+POST https://project-vehicles.herokuapp.com/offenses
 Content-Type: application/json
 
 {
@@ -86,22 +86,22 @@ Content-Type: application/json
 
 ###
 
-GET localhost:8080/protocols
+GET https://project-vehicles.herokuapp.com/protocols
 
 ###
 
-GET localhost:8080/protocols/b005mw_116?paid=false
+GET https://project-vehicles.herokuapp.com/protocols/b005mw_116?paid=false
 
 ###
 
-GET localhost:8080/protocols/regNumberSumNoPaid?regNumber=b005mw_116
+GET https://project-vehicles.herokuapp.com/protocols/regNumberSumNoPaid?regNumber=b005mw_116
 
 ###
 
-GET localhost:8080/protocols/Petrov
+GET https://project-vehicles.herokuapp.com/protocols/Petrov
 
 ###
 
-GET localhost:8080/protocols/nameSumNoPaid?name=Petrov
+GET https://project-vehicles.herokuapp.com/protocols/nameSumNoPaid?name=Petrov
 
 ###
